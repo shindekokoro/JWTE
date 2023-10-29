@@ -1,0 +1,36 @@
+{
+  "name": "JWTE",
+  "version": "0.0.1",
+  "description": "J.W.T.E. (JavaScript Web Text Editor) is a progressive web application that uses indexDB to store and manage data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\" ",
+    "start": "npm run build && cd server && node server.js",
+    "server": "cd server node server.js --ignore client",
+    "build": "cd client && npm run build",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "client": "cd client && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shindekokoro/JWTE.git"
+  },
+  "keywords": [
+    "PWA",
+    "javascript",
+    "text",
+    "editor"
+  ],
+  "author": "Brian Whisler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shindekokoro/JWTE/issues"
+  },
+  "homepage": "https://github.com/shindekokoro/JWTE#readme",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "express": "^4.18.2",
+    "git-a-readme": "^1.2.5"
+  }
+}
