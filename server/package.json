@@ -1,0 +1,16 @@
+{
+    "name": "JWTE",
+    "main": "server.js",
+    "scripts": {
+        "server": "nodemon server.js --ignore client"
+    },
+    "keywords": [],
+    "author": "Brian Whisler",
+    "license": "MIT",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.4"
+    }
+}
